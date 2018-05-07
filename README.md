@@ -3,27 +3,27 @@
 Factory helper functions
 
 ```js
-const factories = require('lib-factories');
+const { define, build } = require('lib-factories');
 
-factories.define("myObject", () => ({
+define("myObject", () => ({
   id: "d302cbd3-83e9-4e11-b5e2-9b48f587caf2",
   items: []
 }))
 
-factories.define("myChildObject", () => ({
+define("myChildObject", () => ({
   id: "d302cbd3-83e9-4e11-b5e2-9b48f587caf2",
   price: 9.50
 }))
 
-factories.build("myObject", {
+build("myObject", {
   items: [
-    factories.build("myChildObject", {
+    build("myChildObject", {
       price: 12.50
     })
   ]
 })
 
-module.exports.build = factories.build
+module.exports = { build }
 ```
 
 ## Running tests
