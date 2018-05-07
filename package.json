@@ -1,0 +1,16 @@
+{
+  "name": "lib-factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.isarray": "^4.0.0",
+    "lodash.isfunction": "^3.0.9",
+    "lodash.mergewith": "^4.6.1"
+  }
+}
