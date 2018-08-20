@@ -5,13 +5,14 @@ Factory helper functions
 ```js
 const { define, build } = require('lib-factories');
 
-define("myObject", () => ({
-  id: "d302cbd3-83e9-4e11-b5e2-9b48f587caf2",
+define("myObject", ({ counter, uuid }) => ({
+  id: uuid(),
+  counter: counter(),
   items: []
 }))
 
-define("myChildObject", () => ({
-  id: "d302cbd3-83e9-4e11-b5e2-9b48f587caf2",
+define("myChildObject", ({ uuid }) => ({
+  id: uuid(),
   price: 9.50
 }))
 
