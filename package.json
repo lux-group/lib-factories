@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "",
   "main": "index.js",
-  "types": "./lib/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "test": "node index.test.js"
   },
